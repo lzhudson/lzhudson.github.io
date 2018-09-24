@@ -178,9 +178,11 @@ nav ul a:hover {
     background-size: 200px;
 }
 .portfolio-item img {
+    position: relative;
+    left: 25px;
+
     width: 200px;
     height: 180px;
-    margin: 20px 20px;
 }
 
 
