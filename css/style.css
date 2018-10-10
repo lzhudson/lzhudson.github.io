@@ -6,10 +6,22 @@ nav ul a:hover {
     width: 60px;
     height: 60px;
 }
+.input-field>label{
+    color: black;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #424242 ;
+    -webkit-box-shadow: 0 1px 0 0 #424242 ;
+    box-shadow: 0 1px 0 0 #424242 ;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
+    color: #424242;
+}
 .parallax-container {
     z-index: 1;
 
-    height: 700px;
+    height: 650px;
+    position: relative;
 }
 .parallax-container::before {
     position: absolute;
@@ -23,34 +35,32 @@ nav ul a:hover {
     background-color: rgba(0, 0, 0, .5);
 }
 .apresentation {
-    position: absolute;
-    z-index: 3;
-
-    width: 100%;
-
-    text-align: center;
-
-    color: #fff;
+   color: #fff;
+   position: relative;
 }
 .arrow-down {
-    position: relative;
-    top: 60%;
+    position: absolute;
+    top: 75%;
     left: 50%;
-
-    width: 40px;
-    margin-left: -42px;
+    -webkit-transform: translate(-80%, -50%);
+        -ms-transform: translate(-80%, -50%);
+            transform: translate(-80%, -50%);
+    width: 30px;
+   
 
     text-align: center;
 }
 .arrow-down::after {
     position: absolute;
-
+    top: 0;
+    left: 0;
     width: 40px;
     height: 40px;
 
     content: " ";
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     -webkit-animation: 3s arrow infinite ease;
             animation: 3s arrow infinite ease;
 
@@ -86,7 +96,7 @@ nav ul a:hover {
 }
 .skills::before {
     position: absolute;
-    top: -48px;
+    top: -95px;
     left: 0;
     z-index: 1;
 
@@ -94,13 +104,15 @@ nav ul a:hover {
     height: 100px;
 
     content: "";
-    transform: skewY(8deg);
+    -webkit-transform: skewY(8deg);
+        -ms-transform: skewY(8deg);
+            transform: skewY(8deg);
 
     background-color: #fff;
 }
 .skills::after {
     position: absolute;
-    top: -48px;
+    top: -95px;
     right: 0;
     z-index: 1;
 
@@ -108,19 +120,26 @@ nav ul a:hover {
     height: 100px;
 
     content: "";
-    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg);
 
     background-color: #fff;
 }
-#title-section {
-    position: absolute;
-    left: 50%;
-
-    transform: translate(-50%, 50%);
+.title-section{
+    position: relative;
+    top: 65px;
+    margin-bottom: 105px;
 }
+    /* .title-section {
+        position: absolute;
+        left: 50%;
+        margin-top: 20px;
+        transform: translate(-50%, 50%);
+    } */
 .skills-content {
     position: relative;
-    top: 200px;
+   
 
     width: 100%;
     height: auto;
@@ -139,10 +158,6 @@ nav ul a:hover {
 
     background-color: #424242;
 }
-.portfolio-img {
-    width: 220px;
-    height: 200px;
-}
 .portfolio::before {
     position: absolute;
     top: -48px;
@@ -152,7 +167,9 @@ nav ul a:hover {
     height: 100px;
 
     content: "";
-    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg);
 
     background-color: #424242;
 }
@@ -165,7 +182,9 @@ nav ul a:hover {
     height: 100px;
 
     content: "";
-    transform: skewY(8deg);
+    -webkit-transform: skewY(8deg);
+        -ms-transform: skewY(8deg);
+            transform: skewY(8deg);
 
     background-color: #424242;
 }
@@ -176,6 +195,7 @@ nav ul a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200px;
+    background-color: white;
 }
 .portfolio-item img {
     position: relative;
@@ -198,33 +218,36 @@ nav ul a:hover {
 }
 .contact::before {
     position: absolute;
-    top: -48px;
+    top: -95px;
     left: 0;
 
     width: 50%;
     height: 100px;
 
     content: "";
-    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg);
 
     background-color: #fff;
 }
 .contact::after {
     position: absolute;
-    top: -48px;
+    top: -95px;
     right: 0;
 
     width: 50%;
     height: 100px;
 
     content: "";
-    transform: skewY(8deg);
+    -webkit-transform: skewY(8deg);
+        -ms-transform: skewY(8deg);
+            transform: skewY(8deg);
 
     background-color: #fff;
 }
 .form-content {
-    position: relative;
-    top: 200px;
+   
 }
 /* Footer */
 .footer-page {
@@ -245,7 +268,9 @@ nav ul a:hover {
     height: 100px;
 
     content: "";
-    transform: skewY(8deg);
+    -webkit-transform: skewY(8deg);
+        -ms-transform: skewY(8deg);
+            transform: skewY(8deg);
 
     background-color: #fff;
 }
@@ -259,38 +284,63 @@ nav ul a:hover {
     height: 100px;
 
     content: "";
-    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg);
 
     background-color: #fff;
 }
 .footer-page ul {
     position: relative;
-    top: 100px;
-
-    display: flex;
-    width: 100%;
+    top: 150px;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    
+    
 }
-.footer-page ul li {
+.footer-page ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    margin: 0 auto;
+    
 }
-.footer-page ul li a {
+.footer-page ul a {
     text-decoration: none;
+    margin: 0 20px 0 20px;
 }
-.footer-page ul li a img {
+.footer-page ul a img {
     width: 40px;
     height: auto;
 
+    -webkit-transition: -webkit-filter .3s;
+
+    transition: -webkit-filter .3s;
+
+    -o-transition: filter .3s;
+
     transition: filter .3s;
 
-    filter: grayscale(100%);
-}
-.footer-page ul li a img:hover {
-    transition: filter .3s;
+    transition: filter .3s, -webkit-filter .3s;
 
-    filter: grayscale(0%);
+    -webkit-filter: grayscale(100%);
+
+            filter: grayscale(100%);
 }
-.footer-page ul li a {
+.footer-page ul  a img:hover {
+    -webkit-transition: -webkit-filter .3s;
+    transition: -webkit-filter .3s;
+    -o-transition: filter .3s;
+    transition: filter .3s;
+    transition: filter .3s, -webkit-filter .3s;
+
+    -webkit-filter: grayscale(0%);
+
+            filter: grayscale(0%);
+}
+.footer-page ul  a {
     width: auto;
 
     text-align: center;
@@ -322,7 +372,10 @@ nav ul a:hover {
     }
 }
 @media screen and (min-width: 700px) {
-    .footer-page ul {
+    .skills{
+        height: 800px;
+    }
+    /* .footer-page ul {
         position: relative;
         top: 150px;
         left: 50%;
@@ -330,7 +383,7 @@ nav ul a:hover {
         display: flex;
         width: 30%;
         margin-left: -15%;
-    }
+    } */
     .footer-page ul li {
     }
 }
