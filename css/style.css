@@ -199,16 +199,16 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     position: relative;
     z-index: 0;
 }
-.portfolio-item:nth-child(1){
+.portfolio-item-1:nth-child(1){
     background: url('../img/site1.png');
     background-size: 100% 100%;
 }
-.portfolio-item:nth-child(2){
+.portfolio-item-1:nth-child(2){
     background: url('../img/site2.png');
     background-size: 100% 100%;
 }
-.portfolio-item:nth-child(3){
-    background: url('../img/site2.png');
+.portfolio-item-1:nth-child(3){
+    background: url('../img/site3.png');
     background-size: 100% 100%;
 }
 .portfolio-item .info-portfolio{
