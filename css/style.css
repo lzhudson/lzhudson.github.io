@@ -17,6 +17,46 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label{
     color: #424242;
 }
+body{
+    width: 100%;
+  
+    overflow-x: hidden;
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+  height:100%;
+  width:100%;
+  background:rgba(0, 0, 0, 1);
+  position:fixed;
+  left:0;
+  top:0;
+ }
 .parallax-container {
     z-index: 1;
 
@@ -148,6 +188,62 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     height: 20px;
     margin-top: 30px;
 }
+/* Times Projects */
+.time-projects::before {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    z-index: 1;
+
+    width: 50%;
+    height: 100px;
+
+    content: "";
+    -webkit-transform: skewY(8deg);
+        -ms-transform: skewY(8deg);
+            transform: skewY(8deg);
+
+    background-color: #fff;
+}
+.time-projects::after {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    z-index: 1;
+
+    width: 50%;
+    height: 100px;
+
+    content: "";
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg);
+
+    background-color: #fff;
+}
+.time-projects{
+    background-color: #121212;
+    color: #fff;
+    
+   
+    position: relative;
+}
+.time-content{
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+.stat-items i{
+    font-size: 50px;
+}
+.stat-items h2{
+    font-size: 42px;
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+.stat-items p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 /* Portfolio */
 .portfolio {
@@ -157,6 +253,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     height: auto;
 
     background-color: #424242;
+    margin-top: -41px;
 }
 .portfolio::before {
     position: absolute;
@@ -198,6 +295,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     
     position: relative;
     z-index: 0;
+    transition: .2s;
 }
 .portfolio-item-1:nth-child(1){
     background: url('../img/site1.png');
@@ -221,10 +319,12 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     text-align: center;
     color: transparent;
     z-index: 2;
+    transition: .2s;
 }
 .portfolio-item .info-portfolio span{
     font-size: 25px;
     z-index: 2;
+    transition: .2s;
 }
 .portfolio-item .info-portfolio a .link-icon{
     width: 50px;
@@ -237,7 +337,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     margin-top: 10px;
     z-index: 2;
     transform: translate(-50%) rotate(-40deg);
-
+    transition: .2s;
     
 }
 .portfolio-item .info-portfolio a .link-icon i{
@@ -247,9 +347,10 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     transform: translate(-50%, -50%);
     z-index: 2;
     color: transparent;
-
+    transition: .2s;
 }
-.portfolio-item:hover::after{
+.portfolio-item:hover::after,
+.portfolio-item:active::after{
     content: "";
     width: 100%;
     height: 100%;
@@ -258,16 +359,23 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     left: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
 }
-.portfolio-item:hover .info-portfolio .link-icon{
+.portfolio-item:hover .info-portfolio .link-icon,
+.portfolio-item:active .info-portfolio .link-icon{
     border: 2px solid white;
+    transition: .2s;
 }
-.portfolio-item:hover .info-portfolio{
+.portfolio-item:hover .info-portfolio,
+.portfolio-item:active .info-portfolio{
     color: white;
+    transition: .2s;
 }
 
-.portfolio-item:hover .info-portfolio a .link-icon i{
+.portfolio-item:hover .info-portfolio a .link-icon i,
+.portfolio-item:active .info-portfolio a .link-icon i{
     color: white;
+    transition: .2s;
 }
 
 
@@ -416,7 +524,10 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }
 @media screen and (min-width:320px) {
     .portfolio {
-        height: 2200px;
+        height: 900px;
+    }
+    .portfolio-item{
+        margin-bottom: 20px;s
     }
     .skills {
         height: 1100px;
@@ -430,7 +541,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
         height: 700px;
     }
     .portfolio {
-        height: 800px;
+        height: 600px;
     }
     .footer-page {
         height: 330px;
@@ -454,7 +565,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }
 @media screen and (min-width: 993px) {
     .portfolio {
-        height: 950px;
+        height: 600px;
     }
     .footer-page {
         height: 340px;
@@ -462,6 +573,6 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }
 @media screen and (min-width: 1024px) {
     .portfolio {
-        height: 1100px;
+        height: 600px;
     }
 }

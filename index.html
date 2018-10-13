@@ -13,6 +13,9 @@
 	<meta name="theme-color" content="#424242">
 	<link rel="icon" href="img/HTML-512.png" type="image/x-icon">
 	<link rel="canonical" href="https://lzhudson.github.io/"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
 
 	<!-- SEO Geral -->
 
@@ -43,8 +46,18 @@
 	<meta name="twitter:image" content="https://lzhudson.github.io/img/showcase.jpg"">
 	<meta name="twitter:creator" content="@hudsonholanda_">
 	<!-- <meta name="twitter:site" content="@empresa"> -->
+	<script type="text/javascript">
+		var overlay = document.getElementById("overlay");
+
+		window.addEventListener('load', function(){
+			overlay.style.display = 'none';
+		})
+	</script>
 </head>
 <body>
+	<!-- <div id="overlay">
+		<div class="spinner"></div> 
+	</div> -->
 	<div class="parallax-container">
 		<nav class="z-depth-0 transparent">
 			<div class="nav-wrapper container">
@@ -175,6 +188,41 @@
 			</div>
 		</div> -->
 	</section>
+
+	<section class="time-projects">
+		<div class="container">
+			<div class="time-content row center">
+				<div class="col s12 m6 l3 xl3">
+					<div class="stat-items">
+						<i class="fas fa-coffee"></i>
+						<h2><span class="counter center">115</span><span>+</span></h2>
+						<p>Cafés Tomados</p>
+					</div>
+				</div>
+				<div class="col s12 m6 l3 xl3">
+					<div class="stat-items">
+						<i class="fas fa-code"></i>
+						<h2><span class="counter center">4000</span><span>+</span></h2>
+						<p>Linhas de Códigos</p>
+					</div>
+				</div>
+				<div class="col s12 m6 l3 xl3">
+					<div class="stat-items">
+						<i class="far fa-window-maximize"></i>
+						<h2><span class="counter center">4</span><span>+</span></h2>
+						<p>Sites Feitos</p>
+					</div>
+				</div>
+				<div class="col s12 m6 l3 xl3">
+					<div class="stat-items">
+						<i class="far fa-clock"></i>
+						<h2><span class="counter center">120</span><span>+</span></h2>
+						<p>Horas Gastas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="portfolio"> 
 		<div class="container">
 			<div class="title-section">
@@ -184,7 +232,7 @@
 				<div class="portfolio-item-1 portfolio-item col s12 m4 l4">
 					<div class="info-portfolio">
 						<span>Âgencia Piroll</span><br>
-						<a href="http://pirollagency.herobo.com/">
+						<a target="_blank" href="http://pirollagency.herobo.com/">
 							<div class="link-icon">
 								<i class="material-icons">link</i>
 							</div>
@@ -196,7 +244,7 @@
 				<div class="portfolio-item-1 portfolio-item col s12 m4 l4">
 					<div class="info-portfolio">
 						<span>ProTI</span><br>
-						<a href="http://protiagency.herobo.com/">
+						<a target="_blank" href="http://protiagency.herobo.com/">
 							<div class="link-icon">
 								<i class="material-icons">link</i>
 							</div>
@@ -208,7 +256,7 @@
 				<div class="portfolio-item-1 portfolio-item col s12 m4 l4">
 					<div class="info-portfolio">
 						<span>Hotel Paradise</span><br>
-						<a href="http://protiagency.herobo.com/hotel-paradise">
+						<a target="_blank" href="http://protiagency.herobo.com/hotel-paradise">
 							<div class="link-icon">
 								<i class="material-icons">link</i>
 							</div>
@@ -217,7 +265,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="portfolio-item-2 portfolio-item col s12 m4 l4"></div>
 				<div class="portfolio-item-2 portfolio-item col s12 m4 l4"></div>
 				<div class="portfolio-item col s12 m4 l4"></div>
@@ -226,7 +274,7 @@
 				<div class="portfolio-item-3 portfolio-item col s12 m4 l4"></div>
 				<div class="portfolio-item-3 portfolio-item col s12 m4 l4"></div>
 				<div class="portfolio-item-3 portfolio-item col s12 m4 l4"></div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<section class="contact">
@@ -287,6 +335,8 @@
 	<!--JavaScript at end of body for optimized loading-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
 </body>
 </html> 
