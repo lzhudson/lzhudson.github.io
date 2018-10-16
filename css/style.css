@@ -187,6 +187,7 @@ body{
 .skills-content .progress {
     height: 20px;
     margin-top: 30px;
+    border-radius: 20px;
 }
 /* Times Projects */
 .time-projects::before {
@@ -199,9 +200,9 @@ body{
     height: 100px;
 
     content: "";
-    -webkit-transform: skewY(8deg);
-        -ms-transform: skewY(8deg);
-            transform: skewY(8deg);
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg);
 
     background-color: #fff;
 }
@@ -215,9 +216,9 @@ body{
     height: 100px;
 
     content: "";
-    -webkit-transform: skewY(-8deg);
-        -ms-transform: skewY(-8deg);
-            transform: skewY(-8deg);
+    -webkit-transform: skewY(8deg);
+        -ms-transform: skewY(8deg);
+            transform: skewY(8deg);
 
     background-color: #fff;
 }
