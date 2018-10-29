@@ -60,7 +60,7 @@ body{
 .parallax-container {
     z-index: 1;
 
-    height: 650px;
+    height: 95vh;
     position: relative;
 }
 .parallax-container::before {
