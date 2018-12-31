@@ -7,7 +7,7 @@
 	
 </head>
 <body>
-	<div class="center">
+	<div id="center" class="center">
 		<h1><span> 2019</span><br> Contagem Regressiva</h1>
 		<div id="clock"></div>
 	</div>
@@ -17,16 +17,42 @@
   <script src="countdown.js"></script>
   <script type="text/javascript">
   	$('#clock').countdown('2019/1/1', function (event) {
+
   		var $this = $(this).html(event.strftime(''
   			+'<div><span>%w</span><span>Semanas</span></div>'
   			+'<div><span>%d</span><span>Dias</span></div>'
   			+'<div><span>%H</span><span>Horas</span></div>'
   			+'<div><span>%M</span><span>Minutos</span></div>'
   			+'<div><span>%S</span><span>Segundos</span></div>'
+
   			))
+
   		
   	})
   </script>
-	
+  <h1 id="header" class="header">Feliz 2019</h1>
+  
+
 </body>
+<script type="text/javascript">
+    var d = new Date();
+    var hora = d.getHours();
+    var dia = d.getDate();
+    var ano = d.getYear();
+    
+    function myFunction() {
+       
+      
+        var x = document.getElementById("center");
+        x.style.display = "none";
+        var y = document.getElementById("header");
+        y.style.display = "block";
+    
+  }
+  
+  if (dia === 1 && ano === 119) {
+    myFunction();
+  }
+
+  </script>
 </html>
