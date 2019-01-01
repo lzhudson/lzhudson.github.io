@@ -21,7 +21,7 @@
   	var scrollbarLocation = $(this).scrollTop();
 
   	scrollLink.each(function() {
-
+  		  $('.button-collapse').sideNav('hide');
   		var sectionOffset = $(this.hash).offset().top - 20;
 
   		if ( sectionOffset <= scrollbarLocation ) {
