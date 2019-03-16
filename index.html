@@ -1,286 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head >
-	<meta charset="utf-8">
-	<title>Hudson Holanda - Front-End Develloper</title>
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="theme-color" content="#424242">
-	<link rel="icon" href="img/HTML-512.png" type="image/x-icon">
-	<link rel="canonical" href="https://lzhudson.github.io/"/>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-
-
-	<!-- SEO Geral -->
-
-	<meta name="description" content="Meu nome é Hudson Holanda, sou desenvolvedor Front-End.">
-	<link rel="canonical" href="https://lzhudson.github.io/">
-	<meta name="author" content="Hudson Holanda">
-	<meta name="robots" content="index">
-
-	<!-- Google+ / Schema.org -->
-	<meta itemprop="name" content="Hudson Holanda - Dev Front-End">
-	<meta itemprop="description" content="Meu nome é Hudson Holanda, sou desenvolvedor Front-End.">
-	<meta itemprop="image" content="https://lzhudson.github.io/img/showcase.jpg">
-	<link href="https://plus.google.com/114577985863472927021" rel="publisher">
-
-	<!-- Open Graph Facebook -->
-	<meta property="og:title" content="Hudson Holanda Dev Front-End">
-	<meta property="og:description" content="Meu nome é Hudson Holanda, sou desenvolvedor Front-End."/>
-	<meta property="og:url" content="https://lzhudson.github.io/">
-	<meta property="og:site_name" content="Hudson Holanda Dev Front-End"/>
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://lzhudson.github.io/img/showcase.jpg">
-
-	<!-- Twitter -->
-	<meta name="twitter:title" content="Hudson Holanda - Dev Front-End">
-	<meta name="twitter:description" content="Meu nome é Hudson Holanda, sou desenvolvedor Front-End.">
-	<meta name="twitter:url" content="https://lzhudson.github.io/">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:image" content="https://lzhudson.github.io/img/showcase.jpg"">
-	<meta name="twitter:creator" content="@hudsonholanda_">
-	<!-- <meta name="twitter:site" content="@empresa"> -->
-	
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
-
-	<div class="parallax-container">
-		<nav class="z-depth-0 transparent">
-			<div class="nav-wrapper container">
-				<a href="#!" class="brand-logo "><img src="img/code_icon-icons.com_48323.png"></a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a class="scroll" href="#home">Home</a></li>
-					<li><a class="scroll" href="#skills">Habilidades</a></li>
-					<li><a class="scroll" href="#portfolio">Portfolio</a></li>
-					<li><a class="scroll" href="#contact">Contato</a></li>
+	<div onclick="closeMenu()" id="overlay" class="overlay"></div>
+	<div class="hero">
+		<header>
+			<nav class="nav-desktop">
+				<a class="logo" href="#"   title="Home"><img id="logo" src="img/logo-white.svg" alt="Logo Site"></a>
+				<a href="#menumobile" id="nav-btn" onclick="slidetoggle()" title="Menu Mobile"><img id="menuhamburguer" src="img/menu-hamburguer-white.svg" alt="Botão Menu"></a>
+				<ul>
+					<li><a id="scroll" href="">Home</a></li>
+					<li><a id="scroll" href="">Sobre</a></li>
+					<li><a id="scroll" href="">Portfolio</a></li>
+					<li><a id="scroll" href="">Contato</a></li>
 				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<div class="apresentation">
-
-				<h1 class="center" >Hudson Holanda</h1>
-				<p class="center" >Trying to make a beautiful web, fast, 100% responsive, and accessible for everyone.</p>
-
-			</div>
-		</div>
-		
-		<div class="arrow-down"></div>
-		<div class="parallax"><img alt="Showcase" src="img/showcase.jpg">
-		</div>
-	</div>
-	<ul class="sidenav button-collapse" id="mobile-demo">
-		<li><a class="scroll" href="#home">Home</a></li>
-		<li><a class="scroll" href="#skills">Habilidades</a></li>
-		<li><a class="scroll" href="#portfolio">Portfolio</a></li>
-		<li><a class="scroll" href="#contact">Contato</a></li>
-	</ul>
-	<section id="skills" class="skills">  
-		<div class="container">
-			<div class="title-section">
-				<h1 class="center-align">Habilidades</h1>
-			</div>
+			</nav>
 			
-			<div class="row">
-				<div class="skills-content">
-					<div class="col s12 m6">
-						<h5 class="center-align">HTML5</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 90%"></div>
-						</div>
-						<h5 class="center-align">CSS3</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 80%"></div>
-						</div>
-						<h5 class="center-align">Materialize CSS</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 80%"></div>
-						</div>
-						<h5 class="center-align">JavaScript</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 60%"></div>
-						</div>
-						<h5 class="center-align">SASS</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 60%"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skills-content">
-					<div class="col s12 m6">
-						<h5 class="center-align">PHP</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 70%"></div>
-						</div>
-						<h5 class="center-align">MySQL</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 80%"></div>
-						</div>
-						<h5 class="center-align">Jquery</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 50%"></div>
-						</div>
-						<h5 class="center-align">Design Responsivo</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 80%"></div>
-						</div>
-						<h5 class="center-align">WordPress</h5>       
-						<div class="grey lighten-1 progress">
-							<div class="grey darken-1 determinate" style="width: 50%"></div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>		
-		
-	</section>
+		</header>
+		<ul id="nav-menu" class="nav-menu">
 
-	<section id="portfolio" class="time-projects">
-		<div class="container">
-			<div class="time-content row center">
-				<div class="col s12 m6 l3 xl3">
-					<div class="stat-items">
-						<i class="fas fa-coffee"></i>
-						<h2><span class="counter center">115</span><span>+</span></h2>
-						<p>Cafés Tomados</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l3 xl3">
-					<div class="stat-items">
-						<i class="fas fa-code"></i>
-						<h2><span class="counter center">4000</span><span>+</span></h2>
-						<p>Linhas de Códigos</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l3 xl3">
-					<div class="stat-items">
-						<i class="far fa-window-maximize"></i>
-						<h2><span class="counter center">4</span><span>+</span></h2>
-						<p>Sites Feitos</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l3 xl3">
-					<div class="stat-items">
-						<i class="far fa-clock"></i>
-						<h2><span class="counter center">120</span><span>+</span></h2>
-						<p>Horas Gastas</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="portfolio"> 
-		<div class="container">
-			<div class="title-section">
-				<h1 class="center-align">Portfolio</h1>
-			</div>
-			<div class="row">
-				<div class="portfolio-item-1 portfolio-item col s12 m4 l4">
-					<div class="info-portfolio">
-						<span>Âgencia Piroll</span><br>
-						<a target="_blank" href="http://pirollagency.herobo.com/">
-							<div class="link-icon">
-								<i class="material-icons">link</i>
-							</div>
-						</a>
+				<ul>
+					<a class="btn-close" id="btn-close" onclick="closeMenu()" href="#close"><img src="img/close-button.svg" alt="Botão Fechar"></a>
+					<li><a href="">Home</a></li>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Portfolio</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+				<ul class="redes-sociais">
 
-
-					</div>
-				</div>
-				<div class="portfolio-item-1 portfolio-item col s12 m4 l4">
-					<div class="info-portfolio">
-						<span>ProTI</span><br>
-						<a target="_blank" href="http://protiagency.herobo.com/">
-							<div class="link-icon">
-								<i class="material-icons">link</i>
-							</div>
-						</a>
-
-
-					</div>
-				</div>
-				<div class="portfolio-item-1 portfolio-item col s12 m4 l4">
-					<div class="info-portfolio">
-						<span>Hotel Paradise</span><br>
-						<a target="_blank" href="http://protiagency.herobo.com/hotel-paradise">
-							<div class="link-icon">
-								<i class="material-icons">link</i>
-							</div>
-						</a>
-
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</section>
-	<section id="contact" class="contact">
-		<div class="container"> 
-			<div class="title-section">
-				<h1 class="center-align">Contato</h1>
-			</div>
-			<div class="form-content">
-				<div class="row">
-					<form class="col s12">
-						<div class="row">
-							<div class="input-field col s12 m6">
-								<input  id="nome" type="text" class="validate">
-								<label for="nome">Nome</label>
-							</div>
-							<div class="input-field col s12 m6">
-								<input  id="sobrenome" type="text" class="validate">
-								<label for="sobrenome">Sobrenome</label>
-							</div>
-							
-							<div class="input-field col s12 m6">
-								<input  id="assunto" type="text" class="validate">
-								<label for="assunto">Assunto</label>
-							</div>
-							<div class="input-field col s12 m6">
-								<input id="email" type="text" class="validate">
-								<label for="email">Email</label>
-							</div>
-							<div class="input-field col s12 m12">
-								<textarea id="mensagem" class="materialize-textarea"></textarea>
-								<label for="mensagem">Mensagem</label>
-							</div>
-							<button class="grey darken-3 col s12 m6 offset-m3 btn waves-effect waves-light" type="submit" name="action">Enviar
-								<i class="material-icons right">send</i>
-							</button>
-						</div>
-					</form>
-				</div>    
-			</div>
-		</div>  
-	</section>
-	<footer class="footer-page">
-		<div class="container">
-			
-			<ul >  
-				<a href="https://www.linkedin.com/in/hudsonholanda/" title="Linkedin"><img alt="Linkedin" class="responsive-img" src="img/linkedin-icon.png"></a>
-				<a href="https://www.facebook.com/hudsonhollanda" title="Facebook"><img alt="Facebook" class="responsive-img" src="img/facebook-icon.png" alt=""></a>
-				<a href="https://www.instagram.com/hudsonholanda_/?hl=pt" title="Instagram"><img alt="Instagram" class="responsive-img" src="img/instagram-icon.png"></a>
-				<a href="https://api.whatsapp.com/send?phone=558589355450" title="Whatsapp"><img src="img/WhatsApp_icon-icons.com_66798.png" alt="Whatsapp"></a>
-				<!-- <li><a href="https://www.linkedin.com/in/hudsonholanda/" title="Linkedin"><img alt="Linkedin" class="responsive-img" src="img/linkedin-icon.png"></a> </li>
-				<li><a href="https://www.facebook.com/hudsonhollanda" title="Facebook"><img alt="Facebook" class="responsive-img" src="img/facebook-icon.png" alt=""></a></li>
-				<li><a href="https://www.instagram.com/hudsonholanda_/?hl=pt" title="Instagram"><img alt="Instagram" class="responsive-img" src="img/instagram-icon.png"></a> </li> -->
+					<a href=""><img src="img/facebook.svg" alt="Facebook"></a>
+					<a href=""><img src="img/whatsapp.svg" alt="Whatsapp"></a>
+					<a href=""><img src="img/github.svg" alt="Github"></a>
+					<a href=""><img src="img/instagram.svg" alt="Instagram"></a>
+					<a href=""><img src="img/linkedin.svg" alt="Linkedin"></a>
+				</ul>
 			</ul>
 
-			<p class="copyright center-align"> Desenvolvido por Hudson Holanda Front-End Develloper</p> 
-		</div>   
-	</footer>
-	<!--JavaScript at end of body for optimized loading-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-	<script type="text/javascript" src="js/init.js"></script>
+		<div class="quote">
+			<h1>Hudson Holanda</h1>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+
+	</div>
+	<section class="about">
+		<h1 class="title-section">Sobre Mim</h1>
+		<div class="my-informations">
+		<div class="my-photo">
+			<img src="img/hudson-holanda-foto.jpg" alt="Hudson Holanda Foto">
+		</div>
+			<p class="about-text text-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus cumque, doloremque incidunt. Illo, adipisci, molestias ipsam nam quibusdam, commodi laborum sint cum nisi odit laboriosam. Iusto consectetur vel, tempora qui neque reprehenderit dolorem a esse sapiente possimus. Voluptatibus ex perspiciatis velit, vitae ea provident repellat asperiores. Quibusdam, temporibus totam obcaecati provident dolores, architecto, maiores neque sapiente aspernatur eveniet, sequi. Rerum eius officia, quia dolorem. Voluptatum quisquam eius inventore et ipsa. Fugiat maxime assumenda, ducimus, velit consequuntur deleniti eos, debitis delectus maiores neque sint alias mollitia possimus dolorum numquam. Doloribus deleniti reprehenderit quisquam ducimus necessitatibus ex fuga voluptatem natus numquam excepturi.</p>
+		</div>
+
+		
+	</section>
+	<section class="skills">
+		<div class="skill">
+			<div class="logo-skill"><img src="img/html-5.png" alt="HTML-5 Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/css3.png" alt="CSS3 Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/javascript.png" alt="Javascript Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/wordpress.png" alt="Wordpress Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/adobe-xd.png" alt="Adobe-xd Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/jquery.png" alt="Jquery Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/sass.png" alt="SASS Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+		<div class="skill">
+			<div class="logo-skill"><img src="img/mysql.png" alt="MySQL Icone"></div>
+			<h2 class="title-skill">Lorem.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+		</div>
+
+	</section>
+	<section class="services">
+		<div class="about-section-service">
+			<h1 class="title-section">Serviços</h1>
+			<p class="about-service">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque, nam culpa.</p>
+			<p class="text-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe quibusdam nemo placeat qui voluptate, iste fugit, accusantium vero magni rem cumque excepturi dicta ea?</p>
+			<button class="btn-contact" type=""> Entrar em Contato</button>
+		</div>
+		<div class="services-slides">
+			<div class="card">
+
+				<img src="img/design-icon-white.svg" alt="">
+				<h2>Design</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+			</div>
+			<div class="card black">
+
+				<img src="img/svg/002-data.svg" alt="">
+				<h2>Desenvolvimento</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic incidunt minus error iste adipisci? A quidem hic, eius reprehenderit.</p>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		var slider = document.getElementById("nav-menu");
+		var body = document.getElementById("body");
+		var overlay = document.getElementById("overlay");
+		function slidetoggle(){
+			if (slider.style.right == "50%") {
+				slider.style.right = "-50%";	
+			}
+			else{
+				slider.style.right = "0";
+				slider.style.boxShadow = "10px 20px 30px #0D0C0C";
+				overlay.style.display = "block";
+				navigation.style.zIndex = "0";
+			}
+		}
+		function closeMenu(){
+
+			slider.style.right = "-50%";
+			overlay.style.display = "none";
+			navigation.style.zIndex = "2";
+
+		}
+
+	</script> 
+	<script type="text/javascript">
+			var navigation = document.querySelector("header");
+			var logo = document.querySelector("#logo");
+			var menu_hamburguer = document.querySelector("#menuhamburguer");
+			var scroll = document.getElementById("scroll");
+			console.log(scroll);
+			window.addEventListener('scroll',() =>{
+
+			const scrolled = window.scrollY;
+			if (scrolled>20) {
+				navigation.style.backgroundColor = "white";
+				logo.src = "img/logo-black.svg";
+				menu_hamburguer.src = "img/menu-hamburguer-black.svg";
+				navigation.style.boxShadow = "  0 2px 6px 0 rgba(0,0,0,0.12), inset 0 -1px 0 0 #dadce0";
+				scroll.style.color = "#000";
+
+
+			}
+			else if(scrolled == 0){
+				navigation.style.backgroundColor = "transparent";
+				logo.src = "img/logo-white.svg";
+				menu_hamburguer.src = "img/menu-hamburguer-white.svg";
+				navigation.style.boxShadow = "0px 0px 0px rgba(0,0,0,0)";
+				scroll.style.color = "#fff";
+			}
+
+		})
+	</script>
+	<script type="text/javascript">
+		var i = 0; // Start Point
+		var images = [];
+		var time = 3000;
+
+
+	</script>
 </body>
-</html> 
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_10" data-name="Retângulo 10" width="20" height="20" transform="translate(329 610)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_6" data-name="Grupo de máscara 6" transform="translate(-329 -610)" clip-path="url(#clip-path)">
+    <g id="_68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6c696e6b6564696e2e737667_1_" data-name="68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6c696e6b6564696e2e737667 (1)" transform="translate(329 610)">
+      <rect id="Retângulo_11" data-name="Retângulo 11" width="20" height="20" rx="3" fill="#0077b5"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="1.445" cy="1.445" r="1.445" transform="translate(4.102 3.945)" fill="#fff"/>
+      <path id="Caminho_5" data-name="Caminho 5" d="M9.531,7.578v7.734M5.547,7.578v7.734" fill="#fff" stroke="#fff" stroke-width="2.578"/>
+      <path id="Caminho_6" data-name="Caminho 6" d="M10.781,11.016a1.461,1.461,0,0,1,1.406-1.562c.938,0,1.289.7,1.289,1.758v4.1h2.578V10.9c0-2.383-1.25-3.477-2.969-3.477a2.563,2.563,0,0,0-2.3,1.25" fill="#fff"/>
+    </g>
+  </g>
+</svg>
