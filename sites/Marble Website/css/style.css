@@ -1,0 +1,254 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+/* Utilty Classes */
+.container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.l-heading{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.m-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.lead{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.l-lead {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.s-lead {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: inline-block;  
+  background-color: #3F8DBF;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+}
+.btn:hover {
+  background-color: #2B678D; 
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+/* Navbar */
+.menu-bg {
+  background: #E5E5E5;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+#navbar .logo{
+  color: #4E4E4E;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#navbar ul li{
+  margin: 0.45rem;
+}
+#navbar ul li a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #4E4E4E;
+}
+#navbar ul li a:hover{
+  color: #1ABB9C;
+}
+/* Showcase */
+#showcase{
+  background: #333 url('../img/Layer\ 1.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+#showcase .showcase-content {
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+align-items: center;
+}
+#showcase .showcase-content h1 {
+  color: #fff;
+}
+#showcase .showcase-content p {
+  color: #A8A8A8;
+}
+/* Services */
+#services {
+  
+}
+#services .items{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#services .items .item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+#services .items .item .img-service-bg{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#services .items .item:nth-child(1) .img-service-bg{
+  background-color: #9D9ABF;
+}
+#services .items .item:nth-child(2) .img-service-bg{
+  background-color: #D2514B;
+}
+#services .items .item:nth-child(3) .img-service-bg{
+  background-color: #66A3C6;
+}
+#services .items .item:nth-child(4) .img-service-bg{
+  background-color: #E8C04F;
+}
+#services .items .item h2 {
+  color: #4E4E4E;
+}
+#services .items .item p {
+  color: #616161;
+}
+/* Section: Works */
+#works h2 {
+  color: #4E4E4E;
+}
+#works .items-work {
+  display: flex;
+}
+#works .items-work .works-post {
+  flex: 1;
+  margin-right: 1rem;
+}
+#works .items-work .works-post:last-child {
+  margin-right: 0rem;
+}
+#works .items-work .works-post .img-post img{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+#works .items-work .works-post h3{
+  color: #4E4E4E;
+}
+#works .items-work .works-post .s-lead {
+  color: #A8A8A8;
+}
+#works .items-work .works-post .l-lead{
+  color: #5C5C5C;
+} 
+/* Section: Testimonials */
+#testimonials {
+  background-color: #EFEFEF;
+}
+#testimonials .testimonial-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#testimonials .testimonial-text .icon-quote {
+  font-family: 'Arial Rounded MT', sans-serif;
+  font-size: 5rem;
+  color: #DCDCDC;
+}
+#testimonials .testimonial-text p {
+  color: #A1A1A1;
+  text-align: center;
+  width: 60%;
+}
+/* Footer */
+#footer {
+  
+  background-color: #E5E5E5;
+}
+#footer .menus {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(255,255,255, 0.3);
+}
+#footer .menus .menu-list {
+  margin-right: 1.8rem;
+}
+#footer .menus .menu-list:last-child {
+  margin-right: 0;  
+}
+#footer .menus  .menu-list .title-list {
+  color: #6C6C6C;
+  text-transform: uppercase;  
+  font-weight: 500;
+}
+#footer .menus  .menu-list ul {
+  list-style: none;
+}
+#footer .menus .menu-list ul li{
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+#footer .menus .menu-list ul li i {
+  color: #A89574;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 1rem;
+}
+
+#footer .menus .menu-list p {
+  display: inline-block;
+  color: #CACACA;
+}
+.copyright {
+  color: #CACACA;
+}
+
+

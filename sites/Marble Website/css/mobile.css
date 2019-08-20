@@ -1,0 +1,46 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+}
+#navbar .logo {
+  text-align: center;
+}
+#navbar ul {
+  flex-direction: column;
+}
+#services .items{
+  display: flex;
+  flex-direction: column;
+}
+#works h2 {
+  text-align: center;
+}
+#works .items-work {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+#works .items-work .works-post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#works .items-work .works-post{
+  margin-right: 0;
+}
+#footer p {
+  text-align: center;
+}
+#footer .menus {
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+#footer .menus .menu-list{
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+#footer .menus .menu-list ul li {
+  justify-content: center;
+}
