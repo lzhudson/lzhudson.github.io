@@ -37,3 +37,18 @@ menuIcon.addEventListener('click', showSideNav);
 btnCloseNav.addEventListener('click', closeSideNav);
 document.addEventListener('scroll', stickyNavBar);
 
+$('#navbar a, .btn').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 100
+      },
+      1000
+    );
+  }
+});
+
