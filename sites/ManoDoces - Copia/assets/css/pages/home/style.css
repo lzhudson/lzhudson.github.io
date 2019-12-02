@@ -1,0 +1,168 @@
+@import "../../components/reset/reset.css";
+@import "../../components/utilitarios/utilitarios.css";
+@import "../../components/header/header.css";
+@import "../.././components/card-produtos/card-produtos.css";
+@import "../../components/footer/footer.css";
+/* Slides */
+.slides .slides-content img {
+    width: 100%;
+    background-attachment: fixed;
+}
+.slides-content .slick-prev{
+    left: 0;
+    z-index: 1;
+}
+.slides-content .slick-next{
+    right: 0;
+}
+/* Banner Regua */
+.banner-regua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner-regua-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: auto;
+}
+.banner-regua-content .regua-card {
+    background-color: var(--secondary-color);
+    flex: 1;
+    border-radius: 4px;
+    margin-right: 0.5rem;;
+}
+.banner-regua-content .regua-card .regua-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 270px;
+}
+.banner-regua-content .regua-card .regua-card-content img {
+    width: 30px;
+    height: 30px;
+    margin: 0 1rem;
+}
+.banner-regua-content div p {
+    font-size: 0.75rem;
+    color: #FFF;
+    font-weight: bold;
+}
+/* Melhores produtos */
+.melhores-produtos-cards{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.melhores-produtos-cards .melhores-produtos-card {
+    position: relative;
+    width: 200px;
+    background: #FFF;
+    border-radius: 6px;
+    margin-left: 0.1rem;
+}
+.melhores-produtos-card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.melhores-produtos-cards .melhores-produtos-card:nth-child(1) .card-content img,
+.melhores-produtos-cards .melhores-produtos-card:nth-child(2) .card-content img,
+.melhores-produtos-cards .melhores-produtos-card:nth-child(3) .card-content img,
+.melhores-produtos-cards .melhores-produtos-card:nth-child(4) .card-content img,
+.melhores-produtos-cards .melhores-produtos-card:nth-child(6) .card-content img,
+.melhores-produtos-cards .melhores-produtos-card:nth-child(7) .card-content img {
+    margin-top: 1rem;
+}
+.melhores-produtos-cards .melhores-produtos-card:nth-child(5) .card-content img {
+    margin-top: 2rem;
+}
+.melhores-produtos-card .card-content p {
+    font-weight: bold;
+    color: var(--tertiary-font-color);
+    align-self: center;
+}
+/* Seu dia mais doce */
+.seu-dia-mais-doce-cards {
+    display: flex;
+    flex-direction: row;
+}
+.seu-dia-mais-doce-cards .seu-dia-mais-doce-card {
+    flex: 1;
+    position: relative;
+}
+.seu-dia-mais-doce-cards .seu-dia-mais-doce-card img {
+    width: 100%;
+    height: 100%;
+}
+.seu-dia-mais-doce-cards .seu-dia-mais-doce-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.seu-dia-mais-doce-cards .seu-dia-mais-doce-card .seu-dia-mais-doce-card-content {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.seu-dia-mais-doce-cards .seu-dia-mais-doce-card:hover::after, 
+.seu-dia-mais-doce-cards .seu-dia-mais-doce-card:hover .seu-dia-mais-doce-card-content{
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+/* Favoritos */
+.favoritos {
+    width: 100%;
+    height: 100%;
+    background: url(../../../img/Group\ 33.svg) no-repeat top;
+    background-size: cover;
+}
+.favoritos-produtos {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0;
+}
+
+/* Banner Categorias */
+.banner-categorias-content {
+    display: flex;
+    flex-direction: row;
+}
+.banner-categorias-content .banner {
+    flex: 1;
+}
+.banner-categorias-content .banner:nth-child(1){
+    margin-right: 0.75rem;
+}
+.banner-categorias-content .banner img {
+    width: 100%;
+}
+/* Descontinho Especial */
+.descontinho-especial-produtos {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}

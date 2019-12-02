@@ -1,0 +1,17 @@
+@media screen and (max-width: 425px){
+    /* O que pode te fazer feliz Hoje */
+    .melhores-produtos .container {
+        padding-right: 0;
+    }
+    .melhores-produtos {
+        display: none;
+    }
+}
+@media screen and (max-width: 360px){
+    .melhores-produtos .container{
+        padding: 0;
+    }
+    .seu-dia-mais-doce .container {
+        padding: 0;
+    }
+}

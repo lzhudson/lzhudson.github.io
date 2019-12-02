@@ -1,0 +1,39 @@
+:root {
+    --primary-font: 'Roboto Slab', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --tertiary-font: 'Nunito', sans-serif;
+    
+    --primary-color: #46C4EC;
+    --secondary-color: #27CDD8;
+    
+    --primary-font-color: #DE2568; 
+    --secondary-font-color: #103B48; 
+    --tertiary-font-color: #5B3F7E;     
+    --quaternary-font-color: #692EB5;
+    --quinary-font-color: #25B2DE;         
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input {
+    outline: 0;
+}
+body {
+    font-family: var(--primary-font);
+    line-height: 1.4;
+    background: #E5E5E5;
+}
+a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+}
+p {
+    margin: 0.75rem 0;
+}
+ul {
+    list-style: none;
+}

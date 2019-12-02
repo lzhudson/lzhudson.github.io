@@ -1,0 +1,37 @@
+@import "../../components/reset/reset.css";
+@import "../../components/utilitarios/utilitarios.css";
+@import "../../components/header/header.css";
+@import "../.././components/card-produtos/card-produtos.css";
+@import "../../components/footer/footer.css";
+.quem-somos-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menus {
+    display: flex;
+    flex-direction: column;
+}
+.menus .menu {
+    background: #FFF;
+    padding: 1.30rem;
+    margin-bottom: 1rem;
+}
+.menus .menu .menu-header {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #CFCFCF;
+}
+.menus .menu ul li a {
+    display: inline-block;
+    font-family: var(--tertiary-font);
+    color: #3E3E3E;
+    font-weight: 500;
+    padding: 0.25rem 0;
+}
+.menus .menu ul li a.active {
+    font-weight: 700;
+}
+/* Quem Somos */
+.quem-somos {
+    width: 800px;
+}

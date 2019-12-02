@@ -1,0 +1,96 @@
+:root {
+    --primary-color-btn-card: #15CE97;  
+    --primary-font-color-card: #26C0E2;
+    --secondary-font-color-card: #000000;
+    --widget-promotion: #EC3354;
+    --widget-off: #FD8B22;
+    --widget-sale: #8222FD;
+} 
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.5);
+    transition: display 0.5s ease;
+}
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.container3 {
+    max-width: 800px;
+}
+.primary-color-font {
+    color: var(--primary-font-color) !important;
+}
+.secondary-color-font {
+    color: var(--primary-font-color-card) !important;
+}
+.section-header {
+    color: var(--primary-font-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+}
+.section-header-2{
+    color: var(--quaternary-font-color);
+}
+.py-0-5{
+    padding: 0.75rem 0;
+}
+.py-1{
+    padding: 1.5rem 0;
+}
+.px-1 {
+    padding: 0 2rem;
+}
+.px-2 {
+    padding: 0 3rem;
+}
+.px-3 {
+    padding: 0 4rem;
+}
+.input-text {
+    background: #FFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 60px;
+    padding: 0.75rem 1rem;
+}
+.btn {
+    flex: 3;
+    box-shadow: 0px 4px 8px rgba(84, 179, 156, 0.5);
+    background: var(--primary-color-btn-card);
+    border-radius: 4px;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+.btn-rounded {
+    border-radius: 65px;
+    box-shadow: none;
+}
+.btn-newsletter{
+    flex: 2;
+}
+@media screen and (max-width: 768px){
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .section-header {
+        font-size: 1rem;
+    }
+}
