@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px){
+    /* Classes Utilitarias */
+    .container {
+        padding: 0 1rem;
+    }
+    /* Fim Classes Utilitarias */
+    /* Banner Regua */
+    .banner-regua {
+        display: none;
+    }
+    /* Fim Banner Regua */
+    /* Snacks Favoritos */
+    .favoritos .container {
+        padding-right: 0;
+    }
+    /* Fim Snacks Favoritos */
+    /* Melhores Produtos */
+    .melhores-produtos-cards{
+        overflow: auto;
+    }
+    .melhores-produtos-card .card-content {
+        width: 200px;
+    }
+    /* Fim Melhores Produtos */
+    /* Seu dia Mais Doce */
+    .seu-dia-mais-doce .container {
+        padding: 0 0 0 1rem;
+    }
+    .seu-dia-mais-doce-cards {
+        overflow: auto;
+    }
+    .seu-dia-mais-doce-cards .seu-dia-mais-doce-card img {
+        width: 282px;
+    }
+    /* Fim Seu Dia Mais Doce */
+    /* Descontinho Especial */
+    .descontinho-especial .container {
+        padding-right: 0;
+    }
+}
