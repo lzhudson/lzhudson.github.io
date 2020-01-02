@@ -1,0 +1,44 @@
+.logo {
+    width: 100px;
+}
+.btn-light{
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+} 
+.container {
+    padding: 0 0.75rem;
+}
+/* Showcase */
+header {
+    background: url('../images/bg-hero-mobile.svg') no-repeat center center/cover, var(--neutral-color-very-pale-cyan);
+}
+.showcase-content {
+    flex-direction: column;
+    text-align: center;
+}
+.showcase-content h1 {
+    font-size: 1.5rem;
+}
+.left-content p {
+    width: 100%;
+}
+.right-content {
+    margin: 1rem 0;
+}
+/* About */
+.about .section-content .card  {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    padding: 1rem 1.2rem;
+}
+.card .left-content {
+    order: 2;
+}
+.card:nth-child(even) .left-content {
+    margin: 0;
+}
+/* Footer */
+footer .footer-content {
+    flex-direction: column;
+}
