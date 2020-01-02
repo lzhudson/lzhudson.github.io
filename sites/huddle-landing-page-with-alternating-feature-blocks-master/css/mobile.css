@@ -59,4 +59,12 @@ footer .footer-content {
     footer {
         padding-bottom: 1rem !important;
     }
+    .logo-footer {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .box-card h2 {
+        text-align: center;
+    }
 }
