@@ -194,7 +194,7 @@ p {
   flex: 1;
 }
 #contact .contact-form .form-group {
-  margin: 0.75rem;
+  margin: 0.75rem 0;
 }
 #contact .contact-form label {
   display: block;
