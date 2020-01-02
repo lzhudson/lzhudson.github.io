@@ -42,3 +42,21 @@ header {
 footer .footer-content {
     flex-direction: column;
 }
+@media screen and (max-width: 425px) {
+    footer .footer-content .menus {
+        flex-direction: column;
+    }
+    .menu-footer.menu {
+        margin-top: 30px;
+    }
+    ul.menu-footer.menu-social {
+        margin-top: 30px;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    footer {
+        padding-bottom: 1rem !important;
+    }
+}
