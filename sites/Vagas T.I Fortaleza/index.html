@@ -1,0 +1,125 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JobFinder</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e064bd0617.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="nav-container">
+          <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo JobFinder"></a>
+          <ul>
+           <li><a href="#">Encontrar Vaga</a></li>
+            <li><a href="#">Enviar Vaga</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="main-banner">
+        <div id="search-form">
+          <h1>A maneira mais facil de encontrar seu emprego</h1>
+          <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
+          <form action="">
+            <input type="text" name="job" placeholder="Digite o cargo">
+            <select name="region" id="">
+              <option value="#">Todos os estados</option>
+            </select>
+            <select name="category" id="">
+              <option value="">Categoria</option>
+            </select>
+            <input type="submit" value="Pesquisar">
+          </form>
+        </div>
+      </div>
+    </header>
+    <main id="lastjobs-container" class="wrapper">
+      <h1>Ultimas Vagas Enviadas</h1>
+      <ul>
+        <li>
+          <a href="">
+            <div class="company-box">
+              <img src="img/googlelogo.png" alt="">
+              <div class="company-info">
+                <h3>Developer</h3>
+                <p>Google</p>
+              </div>
+            </div>
+            <div class="locality">
+              <i class="fas fa-map-maker-alt"></i>
+              <p>Mountain View, California</p>
+            </div>
+            <div class="job-type">
+              <span class="clt">CLT</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="company-box">
+              <img src="img/ibmlogo.png" alt="">
+              <div class="company-info">
+                <h3>DBA</h3>
+                <p>IBM</p>
+              </div>
+            </div>
+            <div class="locality">
+              <i class="fas fa-map-maker-alt"></i>
+              <p>Armonk, New York</p>
+            </div>
+            <div class="job-type">
+              <span class="pj">PJ</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="company-box">
+              <img src="img/linkedinlogo.png" alt="">
+              <div class="company-info">
+                <h3>Front-end Developer</h3>
+                <p>Linkedin</p>
+              </div>
+            </div>
+            <div class="locality">
+              <i class="fas fa-map-maker-alt"></i>
+              <p>Sunnyvale, California</p>
+            </div>
+            <div class="job-type">
+              <span class="home-office">Home Office</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="company-box">
+              <img src="img/facebooklogo.png" alt="">
+              <div class="company-info">
+                <h3>Full Stack Developer</h3>
+                <p>Facebook</p>
+              </div>
+            </div>
+            <div class="locality">
+              <i class="fas fa-map-maker-alt"></i>
+              <p>Menlo Park, California</p>
+            </div>
+            <div class="job-type">
+              <span class="pj">PJ</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="btn-jobs-container">
+        <a href="" class="btn-jobs">Ver mais vagas</a>
+      </div>
+    </main>
+  </div>
+  
+</body>
+</html>
