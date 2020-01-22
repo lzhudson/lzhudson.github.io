@@ -1,0 +1,448 @@
+/* Reset Materialize */
+.no-margin {
+    margin: 0 !important;
+}
+.row {
+    margin-bottom: 0 !important;
+}
+/* Helpers */
+.gray-text {
+    color: #424242;
+}
+.blue-bg {
+    background-color: #10c9c3;
+}
+.black-bg {
+    background-color: #141414;
+}
+.bg-menu {
+    transition: all ease 1s;
+
+    background-color: white;
+}
+/* Menu */
+.activelink a {
+    color: #10c9c3 !important;
+}
+nav {
+    transition: all ease 1s;
+}
+nav ul {
+    margin-right: 40px;
+}
+nav ul li a {
+    font-family: "Nunito Sans";
+    font-size: 12px !important;
+    font-weight: 800;
+
+    transition: .3s;
+
+    color: black;
+}
+nav ul li a:hover {
+    transition: .3s;
+
+    color: #10c9c3;
+    background-color: transparent;
+}
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 5%;
+}
+/* Imagem Parallax */
+.parallax img {
+    width: 100%;
+
+    background-size: cover;
+}
+.parallax-container {
+    height: 400px;
+
+    background-size: cover;
+}
+
+.info {
+    position: absolute;
+    top: 30%;
+
+    width: 500px;
+}
+.info h4 {
+    font-family: "Nunito Sans";
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.info p {
+    font-family: "Nunito Sans";
+
+    text-align: center;
+
+    color: #78787a;
+}
+.info button {
+    height: 50px;
+    margin-left: -5%;
+
+    font-family: "Nunito Sans";
+    font-size: 10px;
+    font-weight: 800;
+
+    transition: .3s;
+
+    color: #fff;
+    border: 3px solid #10c9c3;
+    background-color: #10c9c3;
+}
+.info button:hover {
+    transition: .3s;
+
+    color: #10c9c3;
+    background-color: #fff;
+}
+/* Sobre */
+.about h4 {
+    font-family: "Nunito Sans";
+    font-size: 30px;
+    font-weight: 700;
+}
+.about p {
+    font-family: "Nunito Sans";
+
+    color: #78787a;
+}
+.about img {
+    width: 223px;
+    height: 57px;
+}
+/* Habilidades */
+.skills {
+    position: relative;
+
+    width: 100%;
+    height: 502px;
+
+    background: url("../img/flat-lay.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+.info-skills {
+    position: absolute;
+    top: 25%;
+
+    background-color: transparent;
+}
+.info-skills h6 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+}
+.info-skills span {
+    margin-top: 10px;
+
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.progress {
+    margin-top: 30px;
+
+    background-color: rgba(215, 214, 215, 1);
+}
+.progress .determinate {
+    background-color: :#10c9c3 !important;
+}
+
+
+/* Numeros */
+.numeros {
+    position: relative;
+
+    height: 250px;
+
+    background-color: #10c9c3;
+}
+.numbers {
+    position: absolute;
+    left: 5%;
+
+    width: 90%;
+    height: auto;
+}
+
+.numbers .col.s12 {
+    position: relative;
+
+    margin-top: 100px;
+}
+
+.numbers i {
+    position: absolute;
+}
+.numero-texto {
+    position: absolute;
+    left: 25%;
+
+    width: 200px;
+
+    color: #fff;
+}
+
+.numero-texto span {
+    font-weight: 700;
+}
+.numero-texto h6 {
+    font-size: 15px;
+    font-weight: 700;
+}
+/* Produtos */
+.products {
+    position: relative;
+
+    height: auto;
+}
+.content:hover {
+    transition: .3s;
+
+    opacity: .8;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: .3s;
+
+    opacity: 0;
+    background-color: #10c9c3;
+}
+
+.content i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+/*.products:after{
+	content: "\e63e";
+	background-color: #10c9c3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.products:hover:after{
+	opacity: .5;
+	*/
+
+
+#portfolio .row .col {
+    padding: 0;
+}
+.products img {
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.load {
+    height: 50px;
+
+    background-color: #f5f5f5;
+}
+
+
+.load h6 {
+    padding: 10px;
+
+    font-family: "Montserrat";
+    font-size: 12px;
+
+    color: #8e8e8e;
+}
+/* Processo de trabalho */
+.work-process {
+    height: auto;
+}
+.title h5 {
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.title p {
+    font-family: "Nunito Sans";
+
+    color: #787878;
+}
+
+.controls progress::-moz-progress-bar {
+    background-color: red;
+}
+/* Serviços */
+.services {
+    position: relative;
+
+    height: auto;
+    padding: 30px;
+
+    background-color: rgb(245, 245, 245);
+}
+.services i {
+    position: relative;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+.service h6 {
+    font-family: "Montserrat";
+    font-size: .9rem;
+    font-weight: 700;
+}
+.service p {
+    font-family: "Montserrat";
+
+    color: #787878;
+}
+/* Testimonials */
+.carousel .indicators .indicator-item.active {
+    width: 12px;
+    height: 12px;
+}
+.carousel.carousel-slider .carousel-item .testimonial-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 250px;
+
+    transform: translate(-50%,-50%);
+}
+.carousel.carousel-slider .carousel-item .testimonial-text h2 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+/* Clientes */
+.clients {
+    height: auto;
+}
+.clients .row {
+    margin-top: 40px;
+}
+.clients .row .col.s12 img {
+    position: relative;
+    left: 50%;
+
+    width: 150px;
+    height: 150px;
+
+    transform: translate(-50%);
+}
+
+.clients .row .col.s12:nth-child(2) img {
+    width: 200px;
+}
+.clients .row .col.s12:nth-child(4) img {
+    width: 200px;
+}
+/* Contato */
+.contact {
+    height: auto;
+    padding: 5px;
+
+    background-color: #f5f5f5;
+}
+.contact .title-form h1 {
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.contact .title-form p {
+    font-family: "Montserrat";
+    font-size: .9rem;
+
+    color: #787878;
+}
+.contact form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: 1px solid white;
+    background: white;
+}
+.contact form textarea {
+    height: 200px;
+
+    resize: none;
+}
+.contact form input::placeholder {
+    color: #424242;
+}
+.contact form textarea::placeholder {
+    color: #424242;
+}
+.contact form button {
+    height: 50px;
+    margin-top: 10px;
+
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: .3s;
+
+    color: #fff;
+    border: 3px solid #10c9c3;
+    background-color: #10c9c3;
+}
+.contact form button:hover {
+    transition: .3s;
+
+    color: #10c9c3;
+    background-color: #fff;
+}
+/* Rodapé */
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .parallax-container {
+        height: 420px;
+
+        background-size: cover;
+    }
+
+    .numeros {
+        height: 550px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .parallax-container {
+        height: 500px;
+
+        background-size: cover;
+    }
+    .numeros {
+        height: 350px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .parallax-container {
+        height: 650px;
+
+        background-size: cover;
+    }
+    .numeros {
+        height: 250px;
+    }
+}
