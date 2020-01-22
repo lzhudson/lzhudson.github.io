@@ -8,4 +8,4 @@
 
 [FlexBlog](https://lzhudson.github.io/sites/flex-blog/)
 
-[Hunddle](https://lzhudson.github.io/sites/flex-blog/sites/huddle-landing-page-with-alternating-feature-blocks-master);
+[Hunddle](https://lzhudson.github.io/sites/huddle-landing-page-with-alternating-feature-blocks-master);
