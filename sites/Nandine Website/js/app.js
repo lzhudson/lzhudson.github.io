@@ -2,7 +2,6 @@ const menuIcon = document.querySelector('.menu-toggle');
 const sideNav = document.querySelector('.side-nav');
 const btnCloseNav = document.querySelector('.close-nav');
 const body = document.querySelector('body');
-const scrollLinks = document.querySelectorAll('.scroll');
 const navBar = document.querySelector('header');
 const overlay = document.querySelector('.overlay');
 function showOverlay() {
@@ -12,12 +11,12 @@ function hideOverlay() {
   overlay.style.display = 'none';
 }
 function showSideNav(){
-  sideNav.classList.toggle('active');
+  sideNav.classList.add('active');
   body.style.overflow = 'hidden';
   showOverlay();
 }
 function closeSideNav() {
-  sideNav.classList.toggle('active');
+  sideNav.classList.remove('active');
   body.style.overflow = '';
   hideOverlay();
 }
@@ -37,18 +36,19 @@ menuIcon.addEventListener('click', showSideNav);
 btnCloseNav.addEventListener('click', closeSideNav);
 document.addEventListener('scroll', stickyNavBar);
 
-$('#navbar a, .btn').on('click', function(event) {
-  if (this.hash !== '') {
-    event.preventDefault();
-
-    const hash = this.hash;
-
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - 100
-      },
-      1000
-    );
-  }
+const linksInternos = document.querySelectorAll('.scroll');
+function scrollToSection(event){
+	event.preventDefault();
+	const href = event.currentTarget.getAttribute('href');
+  const section = document.querySelector(href);
+  const sectionPosition = section.getBoundingClientRect().top;
+  console.log(sectionPosition);
+	window.scrollTo({
+    top: sectionPosition,
+    behavior: 'smooth',
+  });
+}
+linksInternos.forEach((link) => {
+	link.addEventListener('click', scrollToSection);
 });
 
