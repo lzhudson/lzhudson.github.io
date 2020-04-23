@@ -11,3 +11,5 @@
 [Hunddle](https://lzhudson.github.io/sites/huddle-landing-page-with-alternating-feature-blocks-master)
 
 [Agencie Piroll](https://lzhudson.github.io/sites/Agência)
+
+[Mano Doces](https://www.manosdoces.com.br/)
